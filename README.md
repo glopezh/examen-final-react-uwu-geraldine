@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# Examen Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Deberás crear una aplicación React para gestionar un listado de amigos. La maqueta la tienes aquí:
 
-## Available Scripts
+## Maquetación
 
-In the project directory, you can run:
+Maqueta sin formulario
 
-### `npm start`
+![Amigos2](public/amigos2.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Maqueta con formulario
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![Amigos1](public/amigos1.png)
 
-### `npm test`
+Utiliza la librería Bootstrap (versión 4) cargada por npm y la librería de iconos react-icons para poder usar estos tres iconos de Font Awesome:
+- FaTimes
+- FaPencilAlt
+- FaStar
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+La aplicación consistirá en un listado CRUD. El encabezado de la página debe mostrar el número de amigos (lo que ahora ves que es un 6), y se deben poder crear, editar y borrar amigos.
 
-### `npm run build`
+- Para crear, se tiene que pulsar en el botón “Crear amigo” y se abrirá el formulario para crear. Al pulsar en el botón Cancelar, debe desaparecer el formulario.
+- Para modificar, se tiene que pulsar en el icono de lápiz de cualquier amigo, y se abrirá el mismo formulario pero cambiando el texto del botón por “Modificar”, y con los campos rellenos.
+- Para borrar se tiene que pulsar en el icono de borrar en cada amigo.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+La fuente de datos será una API local de amigos, con la que podremos comunicarnos así:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- GET [http://localhost:3001/amigos/ ](http://localhost:3001/amigos/)  <- devuelve el listado de amigos
+- DELETE [http://localhost:3001/amigos/3](http://localhost:3001/amigos/3) <- borra el amigo con id 3
+- PUT [http://localhost:3001/amigos/3](http://localhost:3001/amigos/3) <- modifica el amigo con id 3 (hay que mandarle el amigo modificado en el body)
+- POST [http://localhost:3001/amigos/](http://localhost:3001/amigos/ )-> crea un amigo (hay que mandarle el nuevo amigo en el body)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Crea un repositorio en GitHub y despliega la app en Netlify. No hace falta que hagas commits en este examen, sólo el commit final. Cuando acabes, envía un correo a [mario@mariogl.com] (mario@mariogl.com) con las dos URL, la de GitHub y la de Netlify.
