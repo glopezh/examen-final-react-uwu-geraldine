@@ -31,3 +31,10 @@ La fuente de datos será una API local de amigos, con la que podremos comunicarn
 - POST [http://localhost:3001/amigos/](http://localhost:3001/amigos/ )-> crea un amigo (hay que mandarle el nuevo amigo en el body)
 
 Crea un repositorio en GitHub y despliega la app en Netlify. No hace falta que hagas commits en este examen, sólo el commit final. Cuando acabes, envía un correo a [mario@mariogl.com](mario@mariogl.com) con las dos URL, la de GitHub y la de Netlify.
+
+## Solución de la prueba
+
+Se realizó la instalación de las recetas:
+
+- Bootstrap
+- react-icons
