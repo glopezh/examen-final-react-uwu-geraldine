@@ -38,3 +38,8 @@ Se realizó la instalación de las recetas:
 
 - Bootstrap
 - react-icons
+
+Se verifica que bootstrap funciona en React y que los react-icons tambien.
+Para poder usar los emojis en MAC, se debe de usar la siguiente combinación de teclas:
+
+- Control + Comando + Barra espaciadora
